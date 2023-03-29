@@ -13,6 +13,7 @@ class MiCardFlutter extends StatelessWidget {
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
                 width: double.infinity,
@@ -41,64 +42,48 @@ class MiCardFlutter extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
                   horizontal: 20,
                 ),
-                padding: EdgeInsets.all(
-                  10,
-                ),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                      size: 30,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                    size: 30,
+                  ),
+                  title: Text(
+                    '+55 61 98301-3819',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 18,
+                      color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '+55 61 98301-3819',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 18,
-                        color: Colors.teal.shade900,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
                   horizontal: 20,
                 ),
-                padding: EdgeInsets.all(
-                  10,
-                ),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email_outlined,
-                      color: Colors.teal,
-                      size: 30,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email_outlined,
+                    color: Colors.teal,
+                    size: 30,
+                  ),
+                  title: Text(
+                    'arturassiscomp@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 18,
+                      color: Colors.teal.shade900,
                     ),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      'arturassiscomp@gmail.com',
-                      style: TextStyle(
-                        fontFamily: 'SourceSansPro',
-                        fontSize: 18,
-                        color: Colors.teal.shade900,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
