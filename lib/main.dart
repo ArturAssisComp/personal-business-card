@@ -15,6 +15,17 @@ class MiCardFlutter extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 foregroundImage: AssetImage('images/profile_artur1.jpg'),
+                backgroundColor: Colors.blue[100],
+                radius: 80,
+              ),
+              Text(
+                'Artur Assis Alves',
+                style: TextStyle(
+                  fontFamily: 'ShadowsIntoLight',
+                  fontSize: 35,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
