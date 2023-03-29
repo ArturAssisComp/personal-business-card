@@ -42,6 +42,9 @@ flutter:
     - family: ShadowsIntoLight
       fonts:
         - asset: fonts/ShadowsIntoLight-Regular.ttf
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
