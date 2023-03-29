@@ -42,6 +42,13 @@ class MiCardFlutter extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              Divider(
+                height: 20,
+                color: Colors.teal.shade100,
+                thickness: 1.5,
+                indent: 100,
+                endIndent: 100,
+              ),
               Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10,
